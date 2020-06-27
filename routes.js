@@ -14,7 +14,14 @@ routes.get('/instructors/create', function(req, res) {
 })
 
 routes.post("/instructors", function(req, res) {
-    return res.send("recebido")
+  
+    // if(req.body.name == "") {
+    //     return res.send("Preencha o nome do instrutor")
+    // }
+
+    const keys = Object.keys(req.body)
+
+    return res.send(req.body)
 })
 
 routes.get('/members', function(req, res) {
