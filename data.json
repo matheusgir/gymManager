@@ -1,20 +1,22 @@
 {
   "instructors": [
     {
+      "id": 1,
       "avatar_url": "http://google.com",
       "name": "Matheus",
-      "birth": "2020-06-15",
+      "birth": 1593734400000,
       "gender": "M",
       "services": "crossfit",
-      "created_at": 1593559976773
+      "created_at": 1593650246772
     },
     {
+      "id": 2,
       "avatar_url": "http://google.com",
       "name": "MATHEUS GIRARDI",
-      "birth": 1592179200000,
+      "birth": 565401600000,
       "gender": "M",
-      "services": "crossfit",
-      "created_at": 1593560133396
+      "services": "Crossfit, Musculação",
+      "created_at": 1593650309694
     }
   ]
 }
