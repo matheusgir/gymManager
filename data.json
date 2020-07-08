@@ -1,22 +1,46 @@
 {
   "instructors": [
     {
-      "id": 1,
-      "avatar_url": "http://google.com",
-      "name": "Matheus",
-      "birth": 1593734400000,
+      "id": 2,
+      "avatar_url": "https://images.unsplash.com/photo-1526506118085-60ce8714f8c5?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60",
+      "name": "Vinícius Martins",
+      "birth": 638928000000,
       "gender": "M",
-      "services": "crossfit",
-      "created_at": 1593650246772
+      "services": "Crossfit, Musculação",
+      "created_at": 1593227529063
+    },
+    {
+      "id": 3,
+      "avatar_url": "https://images.unsplash.com/photo-1575859694244-0b337bf58e0b?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=634&q=80",
+      "name": "Daniel Santos",
+      "birth": 815529600000,
+      "gender": "M",
+      "services": "Crossfit, Dança, Bike",
+      "created_at": 1593227605924
+    }
+  ],
+  "members": [
+    {
+      "id": 1,
+      "avatar_url": "https://images.unsplash.com/photo-1526506118085-60ce8714f8c5?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60",
+      "name": "Matheus Girardi",
+      "email": "girardi.matheus90@gmail.com",
+      "birth": 642556800000,
+      "gender": "M",
+      "blood": "A+",
+      "weight": "83",
+      "height": "177"
     },
     {
       "id": 2,
-      "avatar_url": "http://google.com",
-      "name": "MATHEUS GIRARDI",
-      "birth": 565401600000,
+      "avatar_url": "https://images.unsplash.com/photo-1526506118085-60ce8714f8c5?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60",
+      "name": "Vinícius Gobbi",
+      "email": "gobbi@msn.com",
+      "birth": 618537600000,
       "gender": "M",
-      "services": "Crossfit, Musculação",
-      "created_at": 1593650309694
+      "blood": "AB+",
+      "weight": "93",
+      "height": "182"
     }
   ]
 }

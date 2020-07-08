@@ -1,25 +1,33 @@
-const express = require('express')
-const routes = express.Router()
-const instructors = require('./instructors')
+const express = require("express");
 
-routes.get('/', function(req, res) {
-    return res.redirect("instructors")
-})
+const instructors = require("./controllers/instructors");
 
-routes.get('/instructors', function(req, res) {
-    return res.render("instructors/index")
-})
+const members = require("./controllers/members");
 
-routes.get('/instructors/create', function(req, res) {
-    return res.render("instructors/create")
-})
+const routes = express.Router();
 
-routes.get('/instructors/:id', instructors.show)
+routes.get("/", (req, res) => {
+  return res.redirect("/instructors");
+});
 
-routes.post("/instructors",instructors.post)
+routes.get("/instructors", instructors.index);
+routes.get("/instructors/create", (req, res) => {
+  return res.render("instructors/create");
+});
+routes.post("/instructors", instructors.create);
+routes.get("/instructors/:id", instructors.show);
+routes.get("/instructors/:id/edit", instructors.showEdit);
+routes.put("/instructors", instructors.update);
+routes.delete("/instructors", instructors.deleteUser);
 
-routes.get('/members', function(req, res) {
-    return res.render("members")
-})
+routes.get("/members", members.index);
+routes.get("/members/create", (req, res) => {
+  return res.render("members/create");
+});
+routes.post("/members", members.create);
+routes.get("/members/:id", members.show);
+routes.get("/members/:id/edit", members.showEdit);
+routes.put("/members", members.update);
+routes.delete("/members", members.deleteUser);
 
-module.exports = routes
+module.exports = routes;
